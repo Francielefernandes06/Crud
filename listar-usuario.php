@@ -15,10 +15,10 @@
             print "Email: $row->email <br>";
             print "Data de Nascimento: $row->data_nasc <br>";
             print "<hr>";
-            // print "<a href='?page=editar&id=$row->id'>Editar</a>";
-            // print " | ";
-            // print "<a href='?page=excluir&id=$row->id'>Excluir</a>";
-            // print "<hr>";
+            print "<a class='btn btn-success' href='?page=editar&id=".$row->id."'>Editar</a>";
+            print " | ";
+            print "<a class='btn btn-danger' href='?page=excluir&id=$row->id'>Excluir</a>";
+            print "<hr>";
         }
     }else{
         print "<p class='alert aleert-danger'>Não há usuários cadastrados</p>";
